@@ -18,7 +18,7 @@ $icon-font-path: '../fonts/';
 body {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-image: url("../images/brillant.png");
+  background-image: url("../images/light_wool.png");
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -46,6 +46,7 @@ body {
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
+  text-align: center;
 }
 
 .container-narrow > hr {
