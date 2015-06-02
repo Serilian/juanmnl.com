@@ -1,6 +1,7 @@
 $icon-font-path: '../fonts/';
 
 @import url(http://fonts.googleapis.com/css?family=Sacramento);
+@import "colors";
 @import "specials";
 @import "card";
 // bower:scss
@@ -18,7 +19,9 @@ $icon-font-path: '../fonts/';
 body {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-image: url("../images/light_wool.png");
+  /* background-image: url("../images/light_wool.png"); */
+  background-color: $redpink;
+  color: #fff !important;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
