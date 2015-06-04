@@ -19,7 +19,8 @@ $icon-font-path: '../fonts/';
 body {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: $white-ghost;
+  background-color: $grey-ghost;
+  color: $black;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
