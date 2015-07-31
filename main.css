@@ -1,9 +1,12 @@
 @import url(http://fonts.googleapis.com/css?family=Inconsolata|VT323);
 body {
+  padding: 3em;
   font-family: 'Inconsolata';
   font-size: 16px;
-  color: #00FF00;
-  background-color: #010101;
+  /*color: #00FF00;*/
+  color: #009EFF;
+  background-color: #111;
+  /*background-image: url(images/shadow.jpg);*/
 }
 
 
@@ -11,7 +14,7 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  background: url(images/interlace.png) top left repeat, rgba(255, 255, 255, 0.8);
+  background: url(images/interlace.png) top left repeat, rgba(255, 255, 255, 0.4);
   width: 100%;
   height: 100%;
   opacity: 0.2;
