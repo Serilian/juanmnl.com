@@ -28,13 +28,30 @@ body {
   margin: 10px;
   padding: 10px;
   border: 2px solid #98DFDF;
-  min-height: 80%;
+  min-height: 50%;
 }
 
 .text {
   display: inline-block;
   text-shadow: 0px 0px 4px #009EFF;
   /*text-shadow: 0px 0px 3px #f5f5f5;*/
+}
+
+.controls {
+  margin: 10px;
+}
+
+input[type=button] {
+  color: #98DFDF;
+  text-shadow: 0px 0px 4px #009EFF;
+  background-color: transparent;
+  border: 2px solid #98DFDF;
+  padding: 10px;
+}
+
+input[type=button]:active {
+  background-color: #f5f5f5;
+  color: #010101;
 }
 
 .interlace {
