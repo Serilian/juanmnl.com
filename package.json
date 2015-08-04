@@ -1,0 +1,19 @@
+{
+  "name": "juanmnl.com",
+  "version": "0.0.1",
+  "description": "Building a UI morphing js machine as a personal website, portfolio",
+  "main": "main.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanmnl/juanmnl.com.git"
+  },
+  "author": "juanmnl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/juanmnl/juanmnl.com/issues"
+  },
+  "homepage": "https://github.com/juanmnl/juanmnl.com#readme"
+}
