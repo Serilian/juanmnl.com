@@ -1,24 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=Inconsolata|VT323);
 body {
-  font-family: 'Inconsolata', monospace, serif;
+  font-family: 'Inconsolata', Monaco, Courier, monospace;
   font-size: 1.2rem;
   color: #98DFDF;
   background-color: #010101;
   /*background-image: url(images/shadow.jpg);*/
-}
-
-@-ms-viewport{
-  width: device-width;
-}
-
-::-moz-selection {
-  background: #FF0065;
-  color: #f5f5f5;
-}
-
-::selection {
-  background: #FF0065;
-  color: #f5f5f5;
 }
 
 #frame {
@@ -37,8 +23,13 @@ body {
 
 .text {
   display: inline-block;
-  text-shadow: 0px 0px 4px #009EFF;
-  /*text-shadow: 0px 0px 3px #f5f5f5;*/
+  text-shadow: 0px 0px 5px #009EFF;
+  /*text-shadow: 0px 0px 1px #f5f5f5;*/
+}
+
+span.danger {
+  color: red;
+  text-shadow: 0px 0px 5px red;
 }
 
 .controls {
@@ -94,4 +85,25 @@ input[type=button]:active {
   0% { opacity:1; }
   50% { opacity:0; }
   100% { opacity:1; }
+}
+
+
+
+
+
+
+
+/*BROWSER CONFIG*/
+@-ms-viewport{
+  width: device-width;
+}
+
+::-moz-selection {
+  background: #FF0065;
+  color: #f5f5f5;open
+}
+
+::selection {
+  background: #FF0065;
+  color: #f5f5f5;
 }
