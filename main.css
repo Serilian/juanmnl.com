@@ -3,6 +3,7 @@ body {
   font-family: 'Inconsolata', Monaco, Courier, monospace;
   font-size: 1.2rem;
   color: #98DFDF;
+  text-shadow: 0px 0px 5px #009EFF;
   background-color: #010101;
   /*background-image: url(images/shadow.jpg);*/
 }
@@ -16,18 +17,17 @@ body {
 
 #screen {
   margin: 10px;
-  padding: 10px;
+  padding: 3px 10px;
   border: 2px solid #98DFDF;
   min-height: 50%;
 }
 
 .text {
   display: inline-block;
-  text-shadow: 0px 0px 5px #009EFF;
   /*text-shadow: 0px 0px 1px #f5f5f5;*/
 }
 
-span.danger {
+.danger {
   color: red;
   text-shadow: 0px 0px 5px red;
 }
@@ -47,6 +47,11 @@ input[type=button] {
 input[type=button]:active {
   background-color: #f5f5f5;
   color: #010101;
+}
+
+hr {
+  border: 0;
+  border-bottom: 1px dashed #98DFDF;
 }
 
 .interlace {
