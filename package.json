@@ -1,7 +1,7 @@
 {
   "name": "juanmnl.com",
   "version": "0.0.1",
-  "description": "Building a UI morphing js machine as a personal website, portfolio",
+  "description": "Building a UI morphing JS machine as a personal website & portfolio",
   "main": "main.js",
   "scripts": {
     "test": "test"
@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/juanmnl/juanmnl.com/issues"
   },
-  "homepage": "https://github.com/juanmnl/juanmnl.com#readme"
+  "homepage": "https://github.com/juanmnl/juanmnl.com#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.0.4"
+  }
 }
