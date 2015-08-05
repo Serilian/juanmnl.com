@@ -17,6 +17,18 @@ gulp.task('styles', function() {
     .pipe(gulp.dest('./build/styles/'))
 });
 
+// BUILD VENDOR JS FOLDER FROM SRC LIB
+gulp.task('js-vendor', function() {
+  gulp.src('./src/lib/**/*.js')
+    .pipe(gulp.dest('./build/public/vendor/'))
+});
+
+// BUILD VENDOR JS FOLDER FROM SRC LIB
+gulp.task('js', function() {
+  gulp.src('./src/js/**/*.js')
+    .pipe(gulp.dest('./build/js/'))
+});
+
 // COPY HTML FILE (TEMP)
 gulp.task('html', function() {
   gulp.src('src/*.html').pipe(gulp.dest('build/'));
