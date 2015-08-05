@@ -1,0 +1,12 @@
+@import '../_colors';
+
+// TERMINAL TEXT
+.text {
+  display: inline-block;
+  /*text-shadow: 0px 0px 1px $white;*/
+}
+
+.danger {
+  color: $red;
+  text-shadow: 0px 0px 5px $red;
+}
