@@ -1,16 +1,15 @@
 $(function() {
   $("#screen .text").typed({
     strings: [
-    "<span class='warning'>WARNING</span> ^1000",
-    "^1000 System has been compromised ^1000",
-    "^1000 <span class='danger'>***FATAL 3RR0R***</span><br>",
-    "<span class='danger'>DANGER!!!</span> ^1000",
-    "Installing Malware.................<br>...................................<br>...................................<br>...................................<br>...................................",
-    "I'm just joking!<br> This site is under construction ^1000",
-    "Contact me on twitter or github <br> <i>(with on of the buttons below)</i>"],
+    "Hello there! ^1000",
+    "^1000 Welcome to my website ^1000",
+    "^1000 This is a work in progress for an UI research<br><i>UI - User interface</i>",
+    "This site is under development and can behave erratically ^1000",
+    "If you want to get in touch, please use the buttons below. ^1000",
+    "Or throw me an email juanmnl@me.com :)"],
     contentType: 'html',
-    typeSpeed: 2,
-    backSpeed: 1,
+    typeSpeed: 5,
+    backSpeed: 2,
     startDelay: 2000,
     loop: false
   });
