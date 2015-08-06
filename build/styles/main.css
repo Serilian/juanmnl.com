@@ -39,6 +39,9 @@ hr {
   display: inline-block;
   /*text-shadow: 0px 0px 1px $white;*/ }
 
+.center {
+  text-align: center; }
+
 .danger {
   color: #FF5D5D;
   text-shadow: 0px 0px 5px red; }
