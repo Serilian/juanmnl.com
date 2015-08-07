@@ -1,10 +1,11 @@
 var gulp = require('gulp'),
-  gutil = require('gulp-util'),
-  jshint = require('gulp-jshint'),
-  sass = require('gulp-sass'),
-  changed = require('gulp-changed'),
-  imagemin = require('gulp-imagemin'),
-  browserSync = require('browser-sync');
+    gutil = require('gulp-util'),
+    jshint = require('gulp-jshint'),
+    sass = require('gulp-sass'),
+    changed = require('gulp-changed'),
+    imagemin = require('gulp-imagemin'),
+    minifyHTML = require('gulp-minify-html');
+    browserSync = require('browser-sync');
 
 
 // DEFAULT
@@ -14,24 +15,26 @@ gulp.task('default', ['watch']);
 gulp.task('css', function() {
   gulp.src('./src/sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./build/styles/'))
+    .pipe(gulp.dest('./build/styles/'));
 });
 
 // BUILD VENDOR JS FOLDER FROM SRC LIB
 gulp.task('js-vendor', function() {
   gulp.src('./src/lib/**/*.js')
-    .pipe(gulp.dest('./build/public/vendor/'))
+    .pipe(gulp.dest('./build/public/vendor/'));
 });
 
 // BUILD VENDOR JS FOLDER FROM SRC LIB
 gulp.task('js', function() {
   gulp.src('./src/js/**/*.js')
-    .pipe(gulp.dest('./build/js/'))
+    .pipe(gulp.dest('./build/js/'));
 });
 
 // COPY HTML FILE (TEMP)
 gulp.task('html', function() {
-  gulp.src('src/*.html').pipe(gulp.dest('build/'));
+  gulp.src('src/*.html')
+  .pipe(minifyHTML())
+  .pipe(gulp.dest('build/'));
 });
 
 // JSHINT
