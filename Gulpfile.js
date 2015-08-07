@@ -6,6 +6,7 @@ var gulp = require('gulp'),
     imagemin = require('gulp-imagemin'),
     minifyHTML = require('gulp-minify-html');
     minifyCSS = require('gulp-minify-css');
+    uglify = require('gulp-uglify');
     browserSync = require('browser-sync');
 
 
@@ -29,6 +30,7 @@ gulp.task('js-vendor', function() {
 // BUILD VENDOR JS FOLDER FROM SRC LIB
 gulp.task('js', function() {
   gulp.src('./src/js/**/*.js')
+    .pipe(uglify())
     .pipe(gulp.dest('./build/js/'));
 });
 
