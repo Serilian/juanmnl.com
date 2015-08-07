@@ -9,6 +9,8 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify');
     browserSync = require('browser-sync');
 
+// BUILD
+gulp.task('build', ['jshint', 'html', 'css', 'js', 'imagemin', 'vendor']);
 
 // DEFAULT
 gulp.task('default', ['watch']);
@@ -22,12 +24,12 @@ gulp.task('css', function() {
 });
 
 // BUILD VENDOR JS FOLDER FROM SRC LIB
-gulp.task('js-vendor', function() {
-  gulp.src('./src/lib/**/*.js')
+gulp.task('vendor', function() {
+  gulp.src('./src/lib/**/*')
     .pipe(gulp.dest('./build/public/vendor/'));
 });
 
-// BUILD VENDOR JS FOLDER FROM SRC LIB
+// BUILD JS FOLDER FROM SRC LIB
 gulp.task('js', function() {
   gulp.src('./src/js/**/*.js')
     .pipe(uglify())
@@ -36,8 +38,12 @@ gulp.task('js', function() {
 
 // COPY HTML FILE (TEMP)
 gulp.task('html', function() {
+  var opts = {
+    quotes: true,
+    conditionals: true
+  };
   gulp.src('src/*.html')
-  .pipe(minifyHTML())
+  .pipe(minifyHTML(opts))
   .pipe(gulp.dest('build/'));
 });
 
