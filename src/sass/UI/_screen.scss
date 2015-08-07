@@ -2,21 +2,21 @@
 
 // UI SCREEN
 #screen {
-  margin: 10px;
+  min-height: 75%;
   padding: 3px 10px;
+  margin: 10px;
   border: 2px solid $base;
-  min-height: 60%;
-  overflow-y: scroll;
 }
+
 
 .interlace {
   position: absolute;
-  left: 0;
   top: 0;
-  background: url(../images/interlace.png) top left repeat, rgba(255, 255, 255, 0.1);
+  left: 0;
+  z-index: 10;
   width: 100%;
   height: 100%;
-  opacity: 0.3;
-  z-index: 10;
   pointer-events: none;
+  background: url(../images/interlace.png) top left repeat, rgba(255, 255, 255, .1);
+  opacity: .3;
 }
