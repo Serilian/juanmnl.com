@@ -5,6 +5,7 @@ var gulp = require('gulp'),
     changed = require('gulp-changed'),
     imagemin = require('gulp-imagemin'),
     minifyHTML = require('gulp-minify-html');
+    minifyCSS = require('gulp-minify-css');
     browserSync = require('browser-sync');
 
 
@@ -15,6 +16,7 @@ gulp.task('default', ['watch']);
 gulp.task('css', function() {
   gulp.src('./src/sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
+    .pipe(minifyCSS({compatibility: 'ie8'}))
     .pipe(gulp.dest('./build/styles/'));
 });
 
