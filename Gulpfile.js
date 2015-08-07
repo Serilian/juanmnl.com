@@ -67,7 +67,8 @@ gulp.task('imagemin', function() {
 
 // WATCH TASK
 gulp.task('watch', function() {
-  gulp.watch('source/js/**/*.js', ['jshint']);
+  gulp.watch('./src/js/**/*.js', ['jshint']);
+  gulp.watch('./src/js/**/*.js', ['js']);
   gulp.watch('./src/sass/**/*.scss', ['css']);
   gulp.watch('./src/*.html', ['html']);
   return gutil.log("🎵 I've got a feeling, somebody's watching me!! Oh! oh eh oh!🎵");
