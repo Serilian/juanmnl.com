@@ -15,6 +15,7 @@ $(document).keypress(function(e) {
 
 $(document).on({'touchstart': function(e) {
   initMachine();
+  $(this).off(e);
 }});
 
 function initMachine() {
