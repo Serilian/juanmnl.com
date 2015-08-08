@@ -18,6 +18,10 @@ body {
   margin: 0 auto;
 }
 
+.ok {
+  color: $green;
+}
+
 hr {
   border: 0;
   border-bottom: 1px dotted $base;
@@ -31,7 +35,11 @@ hr {
 @import 'UI/cursor';
 @import 'UI/controls';
 
-
+.blink {
+  -webkit-animation: blink .2s infinite;
+     -moz-animation: blink .2s infinite;
+          animation: blink .2s infinite;
+}
 /*BROWSER CONFIG*/
 @-ms-viewport {
   width: device-width;
