@@ -7,11 +7,12 @@ $(document).ready(function() {
   $("#serverReady").hide();
 });
 
-$(document).keypress(function(e) {
+$(document).on({'keypress': function(e) {
   if(e.which === 13) {
     initMachine();
+    $(this).off(e);
   }
-});
+}});
 
 $(document).on({'touchstart': function(e) {
   initMachine();
