@@ -9,7 +9,6 @@ body {
   text-shadow: 0 0 5px $base-bright;
   word-wrap: break-word;
   background-color: $bg;
-  /*background-image: url(images/shadow.jpg);*/
 }
 
 #frame {
@@ -25,6 +24,7 @@ hr {
 }
 
 // UI COMPONENTS
+@import 'UI/preload';
 @import 'UI/crt';
 @import 'UI/screen';
 @import 'UI/text';
