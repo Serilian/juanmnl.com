@@ -1,19 +1,19 @@
 var gulp = require('gulp'),
+    browserSync = require('browser-sync').create(),
     gutil = require('gulp-util'),
     jshint = require('gulp-jshint'),
+    handlebars = require('gulp-handlebars'),
+    hb = require('gulp-hb'),
+    concat = require('gulp-concat'),
     sass = require('gulp-sass'),
+    autoprefixer = require('gulp-autoprefixer'),
     changed = require('gulp-changed'),
     imagemin = require('gulp-imagemin'),
-    minifyHTML = require('gulp-minify-html');
-    minifyCSS = require('gulp-minify-css');
+    minifyHTML = require('gulp-minify-html'),
+    minifyCSS = require('gulp-minify-css'),
     uglify = require('gulp-uglify');
-    browserSync = require('browser-sync');
 
-// BUILD
-gulp.task('build', ['jshint', 'html', 'css', 'js', 'imagemin', 'vendor']);
 
-// DEFAULT
-gulp.task('default', ['watch']);
 
 // BUILD STYLES FROM SRC SASS
 gulp.task('css', function() {
@@ -36,17 +36,6 @@ gulp.task('js', function() {
     .pipe(gulp.dest('./build/js/'));
 });
 
-// COPY HTML FILE (TEMP)
-gulp.task('html', function() {
-  var opts = {
-    quotes: true,
-    conditionals: true
-  };
-  gulp.src('src/*.html')
-  .pipe(minifyHTML(opts))
-  .pipe(gulp.dest('build/'));
-});
-
 // JSHINT
 gulp.task('jshint', function() {
   return gulp.src('src/js/**/*.js')
@@ -65,11 +54,44 @@ gulp.task('imagemin', function() {
     .pipe(gulp.dest(imgDst));
 });
 
-// WATCH TASK
-gulp.task('watch', function() {
-  gulp.watch('./src/js/**/*.js', ['jshint']);
-  gulp.watch('./src/js/**/*.js', ['js']);
-  gulp.watch('./src/sass/**/*.scss', ['css']);
-  gulp.watch('./src/*.html', ['html']);
+gulp.task('sass', function() {
+  gulp.src('src/sass/**/*.scss')
+    .pipe(sass({
+      errLogToConsole: true
+    }))
+    .pipe(autoprefixer())
+    .pipe(gulp.dest('./build/styles/'));
+});
+
+gulp.task('hbs', function() {
+  gulp.src('./src/index.html')
+    .pipe(hb({
+      data: './src/templates/data/**/*.{js,json}',
+      helpers: './src/templates/helpers/*.js',
+      partials: './src/templates/partials/**/*.hbs'
+    }))
+    .pipe(gulp.dest('./build/'));
+});
+
+// Make sure compilation finishes before sending reload stream
+gulp.task('sass-watch', ['sass'], browserSync.reload);
+gulp.task('hbs-watch', ['hbs'], browserSync.reload);
+
+// Static Server + watching scss/html files
+gulp.task('serve', ['sass', 'hbs' ,'jshint'], function() {
+
+  browserSync.init({
+    server: "./build"
+  });
+
+  gulp.watch("src/sass/*.scss", ['sass-watch']);
+  gulp.watch("src/templates/**/*.hbs", ['hbs-watch']);
   return gutil.log("🎵 I've got a feeling, somebody's watching me!! Oh! oh eh oh!🎵");
 });
+
+
+// WATCH TASK
+gulp.task('default', ['serve']);
+
+// BUILD
+gulp.task('build', ['jshint', 'html', 'sass', 'js', 'imagemin', 'vendor']);

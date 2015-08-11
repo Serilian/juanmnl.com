@@ -24,44 +24,12 @@ content="http://www.juanmnl.com" />
   </head>
   <body>
     <div class="interlace"></div>
-    <p id="preload">
-      Welcome to juanmnl.com :P <br>
-      Please press &lt;&lt; ENTER <small>(or touch)</small> &gt;&gt; to continue</p>
+    {{> preload}}
+
     <div id="frame">
-      <div id="screen">
+      {{> screen}}
 
-        <p id="title-bar" class="center">
-          Welcome to juanmnl.com V0.0.13<i><small>alpha</small></i>
-        </p>
-
-        <hr id="divider">
-
-        <p id="loading">
-          &gt;<span class="blink">_</span>
-          Loading Artificial intell1g3nc$%3rr0r
-        </p>
-
-        <p id="error">
-          <span class="danger">
-            ++ ERR - 001313 - exception found(leveln13) ++ <br>
-            ++ SYSTEM CORRUPTED ++ <br>
-            ----------------------
-          </span>
-        </p>
-
-        <small class="thinking">&gt;<span class="blink">_</span></small>
-
-        <small><p id="serverReady"><span class="ok">SYSTEM RUNNING...</span></p></small>
-
-        <p class="text"></p>
-
-      </div>
-
-      <div class="controls">
-        <a target="_blank" href="http://hoverboard.io/juanmnl">CV</a>
-        <a target="_blank" href="https://www.twitter.com/_juanmnl">@twitter</a>
-        <a target="_blank" href="https://github.com/juanmnl">Github</a>
-      </div>
+      {{> controls}}
     </div>
 
     <!-- SCRIPTS -->
