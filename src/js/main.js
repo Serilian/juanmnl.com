@@ -27,7 +27,7 @@ function initMachine() {
 
   var loading = function() {
     $("#loading").show().append().typed({
-      strings: ['...', '...', '<small><span class="warning">Warning: **This site is under development**^500</span></small>', '<small>Work: <span class="ok">Local/remote</span><br>Job: <span class="ok">Open - Full-time</span><br>Languages: <span class="ok">HTML5 - CSS <i>(Sass-Less)</i> - Js <i>(jQuery-React-Ember-Meteor)</i></span><br>Platforms: <span class="ok">Web/Mobile</span></small><br>'],
+      strings: ['...', '...', '<small><span class="warning">Warning: **This site is a prototype and under development**^500</span></small>', '<small>Work: <span class="ok">Local/remote</span><br>Job: <span class="ok">Open - Full-time</span><br>Languages: <span class="ok">HTML5 - CSS <i>(Sass-Less)</i> - Js <i>(jQuery-React-Ember-Meteor)</i></span><br>Platforms: <span class="ok">Web/Mobile</span></small><br>'],
       showCursor: false,
       contentType: 'html'
     });

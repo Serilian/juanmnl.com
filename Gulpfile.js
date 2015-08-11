@@ -74,16 +74,18 @@ gulp.task('hbs', function() {
 });
 
 // Make sure compilation finishes before sending reload stream
+gulp.task('js-watch', ['js'], browserSync.reload);
 gulp.task('sass-watch', ['sass'], browserSync.reload);
 gulp.task('hbs-watch', ['hbs'], browserSync.reload);
 
 // Static Server + watching scss/html files
-gulp.task('serve', ['sass', 'hbs' ,'jshint'], function() {
+gulp.task('serve', ['sass', 'hbs' ,'js', 'jshint'], function() {
 
   browserSync.init({
     server: "./build"
   });
 
+  gulp.watch("src/js/*.js", ['js-watch']);
   gulp.watch("src/sass/*.scss", ['sass-watch']);
   gulp.watch("src/templates/**/*.hbs", ['hbs-watch']);
   return gutil.log("🎵 I've got a feeling, somebody's watching me!! Oh! oh eh oh!🎵");
