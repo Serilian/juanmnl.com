@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Inconsolata|VT323);
 
-@import 'colors';
+@import 'settings';
 
 body {
   font-family: 'Inconsolata', Monaco, Courier, monospace;
@@ -27,12 +27,22 @@ hr {
   border-bottom: 1px dotted $base;
 }
 
+/* UI-Grid system */
+@import "grid";
+
+
 // UI COMPONENTS
+/* UI-Preload */
 @import 'UI/preload';
+/* UI-CRT */
 @import 'UI/crt';
+/* UI-Screen */
 @import 'UI/screen';
+/* UI-Text */
 @import 'UI/text';
+/* UI-Cursor */
 @import 'UI/cursor';
+/* UI-Controls */
 @import 'UI/controls';
 
 .blink {
