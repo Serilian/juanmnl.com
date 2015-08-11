@@ -3,16 +3,28 @@
 // UI CONTROLS
 
 .controls {
+  position: fixed;
+  right: 0;
   display: inline-block;
-  margin: 10px;
+  padding: 0 0 0 0;
+  list-style: none;
+  border: 2px solid #98dfdf;
+
+  li:first-child {
+    border-top: 2px solid transparent;
+  }
+
+  li {
+    border-top: 2px solid #98dfdf;
+  }
 
   a {
+    width: 120px;
     padding: 10px;
     color: $base;
     text-decoration: none;
     text-shadow: 0 0 4px $base-bright;
     background-color: transparent;
-    border: 2px solid $base;
 
     &:active {
       color: $black;

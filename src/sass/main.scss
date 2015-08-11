@@ -2,6 +2,10 @@
 
 @import 'colors';
 
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: 'Inconsolata', Monaco, Courier, monospace;
   font-size: 1.2rem;
@@ -15,7 +19,7 @@ body {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  margin: 0 auto;
+  margin: 10px;
 }
 
 .ok {
