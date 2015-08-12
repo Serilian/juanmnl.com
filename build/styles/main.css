@@ -26,11 +26,13 @@ body {
           flex-direction: column; }
 
 .footer {
+  padding: 5px;
   font-size: .7em;
-  text-align: center;
-  background-color: #98dfdf;
+  font-weight: bold;
   color: #010101;
+  text-align: center;
   text-shadow: none;
+  background-color: #98dfdf;
   -webkit-box-flex: 0;
   -webkit-flex: none;
       -ms-flex: none;
