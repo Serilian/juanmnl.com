@@ -26,13 +26,16 @@ body {
   order: -1;
 }
 
-.navigation, .controls {
-  flex: 0 0 12em;
+.controls {
+  flex: 0 0 6em;
 }
 
-.header,
 .footer {
-  flex: none; /* 2 */
+  font-size: .7em;
+  text-align: center;
+
+  flex: none;
+  order: 4;
 }
 
 
