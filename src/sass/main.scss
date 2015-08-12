@@ -23,7 +23,10 @@ body {
 
 .footer {
   font-size: .7em;
+  color: $black;
   text-align: center;
+  text-shadow: none;
+  background-color: $base;
 
   flex: none;
 }
