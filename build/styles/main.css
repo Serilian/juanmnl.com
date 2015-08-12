@@ -24,30 +24,13 @@ body {
       -ms-flex-direction: column;
           flex-direction: column; }
 
-.menu {
-  margin: 10px;
-  -webkit-box-ordinal-group: 0;
-  -webkit-order: -1;
-      -ms-flex-order: -1;
-          order: -1; }
-
-.controls {
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 6em;
-      -ms-flex: 0 0 6em;
-          flex: 0 0 6em; }
-
 .footer {
   font-size: .7em;
   text-align: center;
   -webkit-box-flex: 0;
   -webkit-flex: none;
       -ms-flex: none;
-          flex: none;
-  -webkit-box-ordinal-group: 5;
-  -webkit-order: 4;
-      -ms-flex-order: 4;
-          order: 4; }
+          flex: none; }
 
 .ok {
   color: #5bff00; }
@@ -232,7 +215,11 @@ hr {
 /* COLORS */
 /* Typography */
 .controls {
-  margin: 10px; }
+  margin: 10px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 6em;
+      -ms-flex: 0 0 6em;
+          flex: 0 0 6em; }
   .controls .button {
     display: block;
     width: 100%;
