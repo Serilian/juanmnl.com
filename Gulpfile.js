@@ -29,7 +29,7 @@ gulp.task('js', function() {
 
 // JSHINT
 gulp.task('jshint', function() {
-  return gulp.src('src/js/**/*.js')
+  return gulp.src('./src/js/**/*.js')
     .pipe(jshint())
     .pipe(jshint.reporter('jshint-stylish'));
 });
@@ -84,7 +84,7 @@ gulp.task('serve', ['sass', 'hbs' ,'js', 'jshint'], function() {
   });
 
   gulp.watch("src/js/*.js", ['js-watch']);
-  gulp.watch("src/sass/*.scss", ['sass-watch']);
+  gulp.watch("src/sass/**/*.scss", ['sass-watch']);
   gulp.watch("src/templates/**/*.hbs", ['hbs-watch']);
   return gutil.log("🎵 I've got a feeling, somebody's watching me!! Oh! oh eh oh!🎵");
 });

@@ -1,8 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Inconsolata|VT323);
 /* GRID VARIABLES */
 /* COLORS */
+/* Typography */
+* {
+  font-family: "Inconsolata", Monaco, Courier, monospace !important; }
+
 body {
-  font-family: 'Inconsolata', Monaco, Courier, monospace;
   font-size: 1.2rem;
   color: #98dfdf;
   text-shadow: 0 0 5px #009eff;
@@ -21,7 +24,8 @@ body {
       -ms-flex-direction: column;
           flex-direction: column; }
 
-.navigation {
+.menu {
+  margin: 10px;
   -webkit-box-ordinal-group: 0;
   -webkit-order: -1;
       -ms-flex-order: -1;
@@ -51,13 +55,13 @@ hr {
 /* UI-Preload */
 /* GRID VARIABLES */
 /* COLORS */
+/* Typography */
 #frame {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.5em;
-  border: 2em solid #98dfdf;
+  border: 1em solid #98dfdf;
   opacity: 1.0;
   -webkit-animation: crt-on 0.3s 0s 1;
           animation: crt-on 0.3s 0s 1;
@@ -70,7 +74,7 @@ hr {
 
 /* UI-Preload */
 #preload {
-  padding-top: 25%;
+  padding-top: 10%;
   margin: 10px;
   font-size: 1.3rem;
   text-align: center;
@@ -147,14 +151,18 @@ hr {
 /* UI-Screen */
 /* GRID VARIABLES */
 /* COLORS */
+/* Typography */
 #screen {
+  min-height: 0;
+  /* or height:0px */
   padding: 3px 10px;
   margin: 10px;
+  overflow-y: hidden;
   border: 2px solid #98dfdf;
   -webkit-box-flex: 1;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1; }
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto; }
 
 .interlace {
   position: absolute;
@@ -170,6 +178,7 @@ hr {
 /* UI-Text */
 /* GRID VARIABLES */
 /* COLORS */
+/* Typography */
 .text {
   display: inline;
   /*text-shadow: 0px 0px 1px $white;*/ }
@@ -188,6 +197,7 @@ hr {
 /* UI-Cursor */
 /* GRID VARIABLES */
 /* COLORS */
+/* Typography */
 .typed-cursor {
   width: 10px;
   color: #98dfdf;
@@ -216,16 +226,18 @@ hr {
 /* UI-Controls */
 /* GRID VARIABLES */
 /* COLORS */
+/* Typography */
 .controls {
   margin: 10px; }
-  .controls a {
-    padding: 10px;
+  .controls .button {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
     color: #98dfdf;
-    text-decoration: none;
-    text-shadow: 0 0 4px #009eff;
+    text-shadow: 0 0 5px #009eff;
     background-color: transparent;
-    border: 2px solid #98dfdf; }
-    .controls a:active {
+    border-color: #98dfdf; }
+    .controls .button:active {
       color: #010101;
       background-color: #f5f5f5; }
 
