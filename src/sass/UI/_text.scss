@@ -23,3 +23,18 @@
   color: $green;
   text-shadow: 0 0 1px $green-bright;
 }
+
+.separator {
+  width: 100%;
+  margin: 10px auto;
+  font-size: x-small;
+  text-align: center;
+
+  &::before {
+    content: "--";
+  }
+
+  &::after {
+    content: "--";
+  }
+}
