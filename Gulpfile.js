@@ -23,7 +23,6 @@ gulp.task('vendor', function() {
 // BUILD JS FOLDER FROM SRC LIB
 gulp.task('js', function() {
   gulp.src('./src/js/**/*.js')
-    .pipe(uglify())
     .pipe(gulp.dest('./build/js/'));
 });
 

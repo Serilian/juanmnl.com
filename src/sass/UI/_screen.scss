@@ -4,6 +4,7 @@
 
 #screen {
   min-height: 0; /* or height:0px */
+  max-height: vmax;
   padding: 3px 10px;
   margin: 10px;
   overflow-y: hidden;
@@ -23,4 +24,5 @@
   pointer-events: none;
   background: url(../images/interlace.png) top left repeat, rgba(255, 255, 255, .1);
   opacity: .3;
+  // animation: blink .1s steps(2, start) infinite, skip 7s linear infinite, flicker .1s steps(2, start) infinite;
 }

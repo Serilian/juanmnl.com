@@ -2,14 +2,12 @@
 
 // UI CURSOR
 .typed-cursor {
-  width: 10px;
+  width: 8px;
   color: $base;
   background-color: $base;
   box-shadow: 0 0 3px $base-bright;
   opacity: 1;
-  -webkit-animation: blink .6s infinite;
-     -moz-animation: blink .6s infinite;
-          animation: blink .6s infinite;
+  animation: blink .6s infinite;
 }
 @keyframes blink {
   0% {

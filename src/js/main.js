@@ -62,7 +62,7 @@ function initMachine() {
   setTimeout(serverReadyHide, 17700);
 
   var welcomeText = function() {
-    $("#frame #screen .text").typed({
+    $("#frame #screen .text span").typed({
       strings: [
         'Hello there! ;)^1000',
         'How are you?^1000',
