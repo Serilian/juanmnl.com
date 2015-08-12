@@ -12,12 +12,25 @@ body {
   background-color: $bg;
 }
 
-#frame {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  margin: 0 auto;
+.machine {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
+
+.navigation {
+  order: -1;
+}
+
+.navigation, .controls {
+  flex: 0 0 12em;
+}
+
+.header,
+.footer {
+  flex: none; /* 2 */
+}
+
 
 .ok {
   color: $green;
@@ -28,11 +41,9 @@ hr {
   border-bottom: 1px dotted $base;
 }
 
-/* UI-Grid system */
-@import "grid";
-
-
 // UI COMPONENTS
+/* UI-Preload */
+@import 'UI/frame';
 /* UI-Preload */
 @import 'UI/preload';
 /* UI-CRT */

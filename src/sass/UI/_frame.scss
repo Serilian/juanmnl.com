@@ -1,0 +1,12 @@
+@import "../settings";
+
+#frame {
+  display: flex;
+  padding: 1.5em;
+  border: 2em solid $base;
+  opacity: 1.0;
+  animation: crt-on .3s 0s 1;
+  animation-timing-function: ease-out;
+
+  flex: 1;
+}

@@ -2,19 +2,12 @@
 
 // UI SCREEN
 
-#frame {
-  opacity: 1.0;
-  -webkit-animation: crt-on .3s 0s 1;
-     -moz-animation: crt-on .3s 0s 1;
-  -webkit-animation-timing-function: ease-out;
-     -moz-animation-timing-function: ease-out;
-}
-
 #screen {
-  min-height: 75%;
   padding: 3px 10px;
   margin: 10px;
   border: 2px solid $base;
+
+  flex: 1;
 }
 
 

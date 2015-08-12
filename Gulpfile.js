@@ -14,15 +14,6 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify');
 
 
-
-// BUILD STYLES FROM SRC SASS
-gulp.task('css', function() {
-  gulp.src('./src/sass/**/*.scss')
-    .pipe(sass().on('error', sass.logError))
-    .pipe(minifyCSS({compatibility: 'ie8'}))
-    .pipe(gulp.dest('./build/styles/'));
-});
-
 // BUILD VENDOR JS FOLDER FROM SRC LIB
 gulp.task('vendor', function() {
   gulp.src('./src/lib/**/*')
@@ -55,11 +46,18 @@ gulp.task('imagemin', function() {
 });
 
 gulp.task('sass', function() {
-  gulp.src('src/sass/**/*.scss')
+  gulp.src('./src/sass/**/*.scss')
     .pipe(sass({
       errLogToConsole: true
     }))
     .pipe(autoprefixer())
+    .pipe(gulp.dest('./build/styles/'));
+});
+
+// BUILD STYLES FROM SRC SASS
+gulp.task('css', function() {
+  gulp.src('./src/sass/**/*.scss')
+    .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./build/styles/'));
 });
 
