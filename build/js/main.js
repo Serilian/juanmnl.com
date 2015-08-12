@@ -1,6 +1,6 @@
 $(document).ready(function() {
-  $("#preload").show();
   $("#frame").hide();
+  $("#preload").show();
   $("#loading").hide();
   $("#cursor-blank").hide();
   $("#error").hide();
