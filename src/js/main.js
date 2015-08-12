@@ -21,6 +21,13 @@ $(document).ready(function() {
       $(this).off(e);
     }
   });
+
+  $("#switch").on('click', function() {
+    $(this).toggleClass("switch-on", "remove");
+    $(this).toggleClass("switch-off", "add");
+    $("#screen").toggleClass("on", "remove");
+    $("#screen").toggleClass("off", "add");
+  });
 });
 
 function initMachine() {

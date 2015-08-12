@@ -21,6 +21,7 @@ body {
   flex-direction: column;
 }
 
+
 .footer {
   padding: 5px;
   font-size: .7em;
@@ -33,17 +34,14 @@ body {
   flex: none;
 }
 
-
-.ok {
-  color: $green;
-}
-
 hr {
   border: 0;
   border-bottom: 1px dotted $base;
 }
 
 // UI COMPONENTS
+/* UI-Controls */
+@import 'UI/controls';
 /* UI-Preload */
 @import 'UI/frame';
 /* UI-Preload */
@@ -56,14 +54,25 @@ hr {
 @import 'UI/text';
 /* UI-Cursor */
 @import 'UI/cursor';
-/* UI-Controls */
-@import 'UI/controls';
 
 .blink {
   -webkit-animation: blink .2s infinite;
      -moz-animation: blink .2s infinite;
           animation: blink .2s infinite;
 }
+
+.interlace {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: url(../images/interlace.png) top left repeat, rgba(255, 255, 255, .1);
+  opacity: .3;
+}
+
 /*BROWSER CONFIG*/
 @-ms-viewport {
   width: device-width;

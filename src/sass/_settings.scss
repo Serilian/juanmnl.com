@@ -6,15 +6,20 @@ $gutter: 1em;
 
 /* COLORS */
 $base: #98dfdf;
+
 $base-bright: #009eff;
 $black: #010101;
-// $bg: #102d82;
-$bg: #313131;
+$bg: #102d82;
+// $bg: #313131;
 // $bg: #30323a;
 $white: #f5f5f5;
 $yellow: #ffe073;
 $red: red;
 $green: #5bff00;
+$green-bright: #00ec72;
+// $base: $green;
+
+$mute: #888;
 
 /* Typography */
 $font: 'Inconsolata', Monaco, Courier, monospace;
@@ -24,3 +29,8 @@ $font: 'Inconsolata', Monaco, Courier, monospace;
 
 $selection: #ff0065;
 $danger: #ff5d5d;
+
+
+$ease-out-quint: cubic-bezier(.230, 1.000, .320, 1.000);
+$ease-in-quint: cubic-bezier(.755, .050, .855, .060);
+$screen-background: #121010;

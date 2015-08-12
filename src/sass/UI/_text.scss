@@ -11,10 +11,15 @@
 
 .danger {
   color: $danger;
-  text-shadow: 0 0 5px $red;
+  text-shadow: 0 0 4px $red;
 }
 
 .warning {
   color: $yellow;
   text-shadow: 0 0 1px $yellow;
+}
+
+.ok {
+  color: $green;
+  text-shadow: 0 0 1px $green-bright;
 }
