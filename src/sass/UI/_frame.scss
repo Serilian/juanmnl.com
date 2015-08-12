@@ -2,6 +2,7 @@
 
 #frame {
   display: flex;
+  overflow: hidden;
   border: 1em solid $base;
   opacity: 1.0;
   animation: crt-on .3s 0s 1;

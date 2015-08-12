@@ -4,7 +4,6 @@
   font-size: 1.3rem;
   text-align: center;
   opacity: 1;
-  -webkit-animation: blink 1s infinite;
-     -moz-animation: blink 1s infinite;
-          animation: blink 1s infinite;
+  animation: blink 1s infinite;
+  // animation: blink .1s steps(2, start) infinite, skip 7s linear infinite, flicker .1s steps(2, start) infinite;
 }

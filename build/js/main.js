@@ -7,17 +7,21 @@ $(document).ready(function() {
   $("#serverReady").hide();
 });
 
-$(document).on({'keypress': function(e) {
-  if(e.which === 13) {
+$(document).on({
+  'keypress': function(e) {
+    if (e.which === 13) {
+      initMachine();
+      $(this).off(e);
+    }
+  }
+});
+
+$(document).on({
+  'touchstart': function(e) {
     initMachine();
     $(this).off(e);
   }
-}});
-
-$(document).on({'touchstart': function(e) {
-  initMachine();
-  $(this).off(e);
-}});
+});
 
 function initMachine() {
   $("#preload").hide();

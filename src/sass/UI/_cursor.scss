@@ -4,10 +4,11 @@
 .typed-cursor {
   width: 8px;
   color: $base;
+  text-shadow: none;
   background-color: $base;
   box-shadow: 0 0 3px $base-bright;
   opacity: 1;
-  animation: blink .6s infinite;
+  animation: blink .8s infinite;
 }
 @keyframes blink {
   0% {
