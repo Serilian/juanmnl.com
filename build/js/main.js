@@ -23,7 +23,7 @@ $(document).ready(function() {
       $("#loading").hide();
     };
     setTimeout(loading, 400);
-    setTimeout(loadingOff, 17000);
+    setTimeout(loadingOff, 19000);
 
     var errorShow = function() {
       $("#error").show();
@@ -37,7 +37,7 @@ $(document).ready(function() {
     var thinking = function() {
       $(".thinking").hide();
     };
-    setTimeout(thinking, 17300);
+    setTimeout(thinking, 19000);
 
     var serverReady = function() {
       $("#serverReady").show();
@@ -45,8 +45,8 @@ $(document).ready(function() {
     var serverReadyHide = function() {
       $("#serverReady").hide();
     };
-    setTimeout(serverReady, 17300);
-    setTimeout(serverReadyHide, 17700);
+    setTimeout(serverReady, 19300);
+    setTimeout(serverReadyHide, 19700);
 
     var welcomeText = function() {
       $("#frame #screen .text span").typed({
@@ -60,7 +60,7 @@ $(document).ready(function() {
         startDelay: 1200
       });
     };
-    setTimeout(welcomeText, 18000);
+    setTimeout(welcomeText, 20000);
   }
   $(document).on({
     'keypress': function(e) {
