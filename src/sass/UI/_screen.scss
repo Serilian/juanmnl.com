@@ -41,8 +41,8 @@
 }
 
 #switch.switch-on{
-  border-color: $base-bright;
-  color: $base-bright;
+  border-color: $white;
+  color: $white;
   text-shadow: none;
 
   &::after { content: "OFF"; }
