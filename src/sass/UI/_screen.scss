@@ -128,28 +128,3 @@
   animation: turn-on 4s linear;
   animation-fill-mode:forwards;
 }
-
-@keyframes overlay-anim{
-  0%{
-    visibility:hidden;
-  }
-  20%{
-    visibility:hidden;
-  }
-  21%{
-    visibility:visible;
-  }
-  100%{
-    visibility:hidden;
-  }
-}
-// .overlay{
-//   color:#00FF00;
-//   position:absolute;
-//   top:20px;
-//   left:20px;
-//   font-size:60px;
-//   //text-shadow:2px 2px black,-2px -2px black, -2px 2px black, 2px -2px black;
-//   visibility:hidden;
-//   pointer-events:none;
-// }

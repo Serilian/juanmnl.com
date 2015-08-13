@@ -6,6 +6,7 @@ $(document).ready(function() {
   $("#error").hide();
   $("#serverReady").hide();
 
+
   $(document).on({
     'keypress': function(e) {
       if (e.which === 13) {
@@ -32,7 +33,7 @@ $(document).ready(function() {
 
 function initMachine() {
   $("#preload").hide();
-  $("#frame").show();
+  $("#frame").css("visibility", "visible").show();
 
   console.log("H3ll0 Y0u C0d3 V0y3ur!! I'll open source this site when it ressembles something :P Don't forget to say hi on twitter -> @_juanmnl");
 

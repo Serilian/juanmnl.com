@@ -17,7 +17,7 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  min-height: 100vh;
+  height: 100vh;
   max-height: 100vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -78,6 +78,7 @@ hr {
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
+  visibility: hidden;
   border: 1em solid #98dfdf;
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7);
   opacity: 1.0;
@@ -172,90 +173,90 @@ hr {
 /* Typography */
 @-webkit-keyframes flicker {
   0% {
-    opacity: 0.96349; }
+    opacity: 0.4823; }
   5% {
-    opacity: 0.35293; }
+    opacity: 0.94721; }
   10% {
-    opacity: 0.00954; }
+    opacity: 0.83182; }
   15% {
-    opacity: 0.12974; }
+    opacity: 0.9242; }
   20% {
-    opacity: 0.29358; }
+    opacity: 0.71826; }
   25% {
-    opacity: 0.71617; }
+    opacity: 0.91306; }
   30% {
-    opacity: 0.97139; }
+    opacity: 0.46933; }
   35% {
-    opacity: 0.0637; }
+    opacity: 0.89439; }
   40% {
-    opacity: 0.9983; }
+    opacity: 0.92231; }
   45% {
-    opacity: 0.76459; }
+    opacity: 0.50289; }
   50% {
-    opacity: 0.62505; }
+    opacity: 0.05571; }
   55% {
-    opacity: 0.91338; }
+    opacity: 0.35691; }
   60% {
-    opacity: 0.53218; }
+    opacity: 0.0994; }
   65% {
-    opacity: 0.17004; }
+    opacity: 0.35029; }
   70% {
-    opacity: 0.41039; }
+    opacity: 0.00089; }
   75% {
-    opacity: 0.62405; }
+    opacity: 0.58692; }
   80% {
-    opacity: 0.23189; }
+    opacity: 0.95798; }
   85% {
-    opacity: 0.32225; }
+    opacity: 0.3228; }
   90% {
-    opacity: 0.96337; }
+    opacity: 0.13523; }
   95% {
-    opacity: 0.21915; }
+    opacity: 0.61624; }
   100% {
-    opacity: 0.04508; } }
+    opacity: 0.70764; } }
 @keyframes flicker {
   0% {
-    opacity: 0.96349; }
+    opacity: 0.4823; }
   5% {
-    opacity: 0.35293; }
+    opacity: 0.94721; }
   10% {
-    opacity: 0.00954; }
+    opacity: 0.83182; }
   15% {
-    opacity: 0.12974; }
+    opacity: 0.9242; }
   20% {
-    opacity: 0.29358; }
+    opacity: 0.71826; }
   25% {
-    opacity: 0.71617; }
+    opacity: 0.91306; }
   30% {
-    opacity: 0.97139; }
+    opacity: 0.46933; }
   35% {
-    opacity: 0.0637; }
+    opacity: 0.89439; }
   40% {
-    opacity: 0.9983; }
+    opacity: 0.92231; }
   45% {
-    opacity: 0.76459; }
+    opacity: 0.50289; }
   50% {
-    opacity: 0.62505; }
+    opacity: 0.05571; }
   55% {
-    opacity: 0.91338; }
+    opacity: 0.35691; }
   60% {
-    opacity: 0.53218; }
+    opacity: 0.0994; }
   65% {
-    opacity: 0.17004; }
+    opacity: 0.35029; }
   70% {
-    opacity: 0.41039; }
+    opacity: 0.00089; }
   75% {
-    opacity: 0.62405; }
+    opacity: 0.58692; }
   80% {
-    opacity: 0.23189; }
+    opacity: 0.95798; }
   85% {
-    opacity: 0.32225; }
+    opacity: 0.3228; }
   90% {
-    opacity: 0.96337; }
+    opacity: 0.13523; }
   95% {
-    opacity: 0.21915; }
+    opacity: 0.61624; }
   100% {
-    opacity: 0.04508; } }
+    opacity: 0.70764; } }
 
 #screen {
   padding: 3px 13px;
@@ -416,26 +417,6 @@ hr {
           animation: turn-on 4s linear;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards; }
-
-@-webkit-keyframes overlay-anim {
-  0% {
-    visibility: hidden; }
-  20% {
-    visibility: hidden; }
-  21% {
-    visibility: visible; }
-  100% {
-    visibility: hidden; } }
-
-@keyframes overlay-anim {
-  0% {
-    visibility: hidden; }
-  20% {
-    visibility: hidden; }
-  21% {
-    visibility: visible; }
-  100% {
-    visibility: hidden; } }
 
 /* UI-Text */
 /* GRID VARIABLES */
