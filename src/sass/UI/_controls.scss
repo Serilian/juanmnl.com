@@ -8,12 +8,12 @@
 
   a.button, button.button {
     display: block;
-    padding-top: 2px;
+    padding: 6px;
     margin-bottom: 5px;
     color: $base;
     text-align: center;
     text-decoration: none;
-    text-shadow: 0 0 5px $base-bright;
+    text-shadow: 0 0 2px $base-bright;
     vertical-align: baseline;
     cursor: pointer;
     background-color: transparent;

@@ -9,7 +9,7 @@
 body {
   font-size: 1.2rem;
   color: $base;
-  text-shadow: 0 0 5px $base-bright;
+  text-shadow: 0 0 2px $base-bright;
   word-wrap: break-word;
   background-color: $bg;
 }
@@ -70,7 +70,7 @@ hr {
   height: 100%;
   pointer-events: none;
   background: url(../images/interlace.png) top left repeat, rgba(255, 255, 255, .1);
-  opacity: .3;
+  opacity: .4;
 }
 
 /*BROWSER CONFIG*/

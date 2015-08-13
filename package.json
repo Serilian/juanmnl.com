@@ -1,6 +1,6 @@
 {
   "name": "juanmnl.com",
-  "version": "0.0.21",
+  "version": "0.0.27",
   "description": "Building a UI morphing JS machine as a personal website & portfolio",
   "main": "main.js",
   "scripts": {

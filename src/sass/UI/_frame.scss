@@ -4,7 +4,7 @@
   display: flex;
   overflow: hidden;
   border: 1em solid $base;
-  box-shadow: inset 0 0 15px rgb(0, 0, 0);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, .7);
   opacity: 1.0;
   animation: crt-on .4s 0s 1;
   animation-timing-function: ease-out;

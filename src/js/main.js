@@ -78,7 +78,7 @@ function initMachine() {
     });
   };
 
-  setTimeout(loading, 400);
+  setTimeout(loading, 1400);
   setTimeout(loadingOff, 19000);
   setTimeout(errorShow, 1800);
   setTimeout(errorHide, 2500);
