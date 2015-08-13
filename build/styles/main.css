@@ -1,12 +1,11 @@
-@import url(http://fonts.googleapis.com/css?family=Inconsolata|VT323);
-/* GRID VARIABLES */
+@import url(http://fonts.googleapis.com/css?family=Inconsolata|Sacramento);
 /* COLORS */
 /* Typography */
 * {
   font-family: "Inconsolata", Monaco, Courier, monospace !important; }
 
 body {
-  font-size: 1.2rem;
+  font-size: 1.2em;
   color: #98dfdf;
   text-shadow: 0 0 2px #009eff;
   word-wrap: break-word;
@@ -26,10 +25,11 @@ body {
           flex-direction: column; }
 
 .footer {
-  padding: 5px;
-  font-size: .7em;
+  padding: .6em;
+  font-family: "Sacramento", cursive !important;
+  font-size: 1.2em;
   font-weight: bold;
-  color: #010101;
+  color: #30323a;
   text-align: center;
   text-shadow: none;
   background-color: #98dfdf;
@@ -43,7 +43,6 @@ hr {
   border-bottom: 1px dotted #98dfdf; }
 
 /* UI-Controls */
-/* GRID VARIABLES */
 /* COLORS */
 /* Typography */
 .controls {
@@ -69,7 +68,6 @@ hr {
       background-color: #f5f5f5; }
 
 /* UI-Preload */
-/* GRID VARIABLES */
 /* COLORS */
 /* Typography */
 #frame {
@@ -168,95 +166,94 @@ hr {
             transform: scale(0.5, 0.005); } }
 
 /* UI-Screen */
-/* GRID VARIABLES */
 /* COLORS */
 /* Typography */
 @-webkit-keyframes flicker {
   0% {
-    opacity: 0.4823; }
+    opacity: 0.23914; }
   5% {
-    opacity: 0.94721; }
+    opacity: 0.03409; }
   10% {
-    opacity: 0.83182; }
+    opacity: 0.51644; }
   15% {
-    opacity: 0.9242; }
+    opacity: 0.95595; }
   20% {
-    opacity: 0.71826; }
+    opacity: 0.20678; }
   25% {
-    opacity: 0.91306; }
+    opacity: 0.58098; }
   30% {
-    opacity: 0.46933; }
+    opacity: 0.50974; }
   35% {
-    opacity: 0.89439; }
+    opacity: 0.21055; }
   40% {
-    opacity: 0.92231; }
+    opacity: 0.73574; }
   45% {
-    opacity: 0.50289; }
+    opacity: 0.50761; }
   50% {
-    opacity: 0.05571; }
+    opacity: 0.61545; }
   55% {
-    opacity: 0.35691; }
+    opacity: 0.87843; }
   60% {
-    opacity: 0.0994; }
+    opacity: 0.41298; }
   65% {
-    opacity: 0.35029; }
+    opacity: 0.65991; }
   70% {
-    opacity: 0.00089; }
+    opacity: 0.25184; }
   75% {
-    opacity: 0.58692; }
+    opacity: 0.63888; }
   80% {
-    opacity: 0.95798; }
+    opacity: 0.2633; }
   85% {
-    opacity: 0.3228; }
+    opacity: 0.34768; }
   90% {
-    opacity: 0.13523; }
+    opacity: 0.2108; }
   95% {
-    opacity: 0.61624; }
+    opacity: 0.87084; }
   100% {
-    opacity: 0.70764; } }
+    opacity: 0.43341; } }
 @keyframes flicker {
   0% {
-    opacity: 0.4823; }
+    opacity: 0.23914; }
   5% {
-    opacity: 0.94721; }
+    opacity: 0.03409; }
   10% {
-    opacity: 0.83182; }
+    opacity: 0.51644; }
   15% {
-    opacity: 0.9242; }
+    opacity: 0.95595; }
   20% {
-    opacity: 0.71826; }
+    opacity: 0.20678; }
   25% {
-    opacity: 0.91306; }
+    opacity: 0.58098; }
   30% {
-    opacity: 0.46933; }
+    opacity: 0.50974; }
   35% {
-    opacity: 0.89439; }
+    opacity: 0.21055; }
   40% {
-    opacity: 0.92231; }
+    opacity: 0.73574; }
   45% {
-    opacity: 0.50289; }
+    opacity: 0.50761; }
   50% {
-    opacity: 0.05571; }
+    opacity: 0.61545; }
   55% {
-    opacity: 0.35691; }
+    opacity: 0.87843; }
   60% {
-    opacity: 0.0994; }
+    opacity: 0.41298; }
   65% {
-    opacity: 0.35029; }
+    opacity: 0.65991; }
   70% {
-    opacity: 0.00089; }
+    opacity: 0.25184; }
   75% {
-    opacity: 0.58692; }
+    opacity: 0.63888; }
   80% {
-    opacity: 0.95798; }
+    opacity: 0.2633; }
   85% {
-    opacity: 0.3228; }
+    opacity: 0.34768; }
   90% {
-    opacity: 0.13523; }
+    opacity: 0.2108; }
   95% {
-    opacity: 0.61624; }
+    opacity: 0.87084; }
   100% {
-    opacity: 0.70764; } }
+    opacity: 0.43341; } }
 
 #screen {
   padding: 3px 13px;
@@ -280,7 +277,7 @@ hr {
     pointer-events: none;
     content: " ";
     background: rgba(18, 16, 16, 0.1);
-    opacity: 0; }
+    opacity: 1; }
 
 #switch.switch-off {
   border-color: #888;
@@ -419,7 +416,6 @@ hr {
           animation-fill-mode: forwards; }
 
 /* UI-Text */
-/* GRID VARIABLES */
 /* COLORS */
 /* Typography */
 .center {
@@ -449,7 +445,6 @@ hr {
     content: "--"; }
 
 /* UI-Cursor */
-/* GRID VARIABLES */
 /* COLORS */
 /* Typography */
 .typed-cursor {

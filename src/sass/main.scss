@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Inconsolata|VT323);
+@import url(http://fonts.googleapis.com/css?family=Inconsolata|Sacramento);
 
 @import 'settings';
 
@@ -7,7 +7,7 @@
 }
 
 body {
-  font-size: 1.2rem;
+  font-size: 1.2em;
   color: $base;
   text-shadow: 0 0 2px $base-bright;
   word-wrap: break-word;
@@ -23,10 +23,11 @@ body {
 
 
 .footer {
-  padding: 5px;
-  font-size: .7em;
+  padding: .6em;
+  font-family: "Sacramento", cursive !important;
+  font-size: 1.2em;
   font-weight: bold;
-  color: $black;
+  color: $bg;
   text-align: center;
   text-shadow: none;
   background-color: $base;
