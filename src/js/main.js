@@ -1,14 +1,14 @@
-$(document).ready(function() {
-  $("#preload").show();
-  $("#frame").hide();
-  $("#loading").hide();
-  $("#cursor-blank").hide();
-  $("#error").hide();
-  $("#serverReady").hide();
+$(document).ready(function () {
+  $('#preload').show();
+  $('#frame').hide();
+  $('#loading').hide();
+  $('#cursor-blank').hide();
+  $('#error').hide();
+  $('#serverReady').hide();
 
 
   $(document).on({
-    'keypress': function(e) {
+    'keypress': function (e) {
       if (e.which === 13) {
         initMachine();
         $(this).off(e);
@@ -17,13 +17,13 @@ $(document).ready(function() {
   });
 
   $(document).on({
-    'touchstart': function(e) {
+    'touchstart': function (e) {
       initMachine();
       $(this).off(e);
     }
   });
 
-  $("#switch").on('click', function() {
+  $("#switch").on('click', function () {
     $(this).toggleClass("switch-on", "remove");
     $(this).toggleClass("switch-off", "add");
     $("#screen").toggleClass("on", "remove");
@@ -37,36 +37,36 @@ function initMachine() {
 
   console.log("H3ll0 Y0u C0d3 V0y3ur!! I'll open source this site when it ressembles something :P Don't forget to say hi on twitter -> @_juanmnl");
 
-  var loading = function() {
+  var loading = function () {
     $("#loading").show().append().typed({
       strings: ['...', '...', '<small><span class="warning">Warning: ** This site is a prototype and under heavy development **^500</span></small>', '<small>Work: <span class="ok">Local/remote</span><br>Job: <span class="ok">Open - Full-time</span><br>Languages: <span class="ok">HTML5 - CSS <i>(Sass-Less)</i> - Js <i>(jQuery-React-Ember-Meteor)</i></span><br>Platforms: <span class="ok">Web/Mobile</span></small><br>'],
       showCursor: false,
       contentType: 'html'
     });
   };
-  var loadingOff = function() {
+  var loadingOff = function () {
     $("#loading").hide();
   };
 
-  var errorShow = function() {
+  var errorShow = function () {
     $("#error").show();
   };
-  var errorHide = function() {
+  var errorHide = function () {
     $("#error").hide();
   };
 
-  var thinking = function() {
+  var thinking = function () {
     $(".thinking").hide();
   };
 
-  var serverReady = function() {
+  var serverReady = function () {
     $("#serverReady").show();
   };
-  var serverReadyHide = function() {
+  var serverReadyHide = function () {
     $("#serverReady").hide();
   };
 
-  var welcomeText = function() {
+  var welcomeText = function () {
     $("#frame #screen .text span").typed({
       strings: [
         'Hello there! :)',
