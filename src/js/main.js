@@ -38,6 +38,11 @@ function initMachine() {
   console.log("H3ll0 Y0u C0d3 V0y3ur!! I'll open source this site when it ressembles something :P Don't forget to say hi on twitter -> @_juanmnl");
 
   var loading = function () {
+    setTimeout(function () {
+      initNote();
+      console.log('Loaded');
+    }, 730);
+
     $("#loading").show().append().typed({
       strings: ['...', '...', '<small><span class="warning">Warning: ** This site is a prototype and under heavy development **^500</span></small>', '<small>Work: <span class="ok">Local/remote</span><br>Job: <span class="ok">Open - Full-time</span><br>Languages: <span class="ok">HTML5 - CSS <i>(Sass-Less)</i> - Js <i>(jQuery-React-Ember-Meteor)</i></span><br>Platforms: <span class="ok">Web/Mobile</span></small><br>'],
       showCursor: false,
