@@ -15,15 +15,21 @@ var gulp = require('gulp'),
 
 
 // BUILD VENDOR JS FOLDER FROM SRC LIB
-gulp.task('vendor', function() {
+gulp.task('vendor', function () {
   gulp.src('./src/lib/**/*')
     .pipe(gulp.dest('./build/public/vendor/'));
 });
 
 // BUILD JS FOLDER FROM SRC LIB
-gulp.task('js', function() {
+gulp.task('js', function () {
   gulp.src('./src/js/**/*.js')
     .pipe(gulp.dest('./build/js/'));
+});
+
+// Build audio FOLDER
+gulp.task('audio', function () {
+  gulp.src('./src/audio/**/*.mp3')
+  .pipe(gulp.dest('./build/audio/'));
 });
 
 // JSHINT
@@ -76,7 +82,7 @@ gulp.task('sass-watch', ['sass'], browserSync.reload);
 gulp.task('hbs-watch', ['hbs'], browserSync.reload);
 
 // Static Server + watching scss/html files
-gulp.task('serve', ['sass', 'hbs' ,'js', 'jshint'], function() {
+gulp.task('serve', ['sass', 'hbs' ,'js', 'jshint', 'audio'], function() {
 
   browserSync.init({
     server: "./build"
