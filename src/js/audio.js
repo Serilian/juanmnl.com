@@ -24,31 +24,41 @@ var crtSound = function () {
   var osc1 = context.createOscillator();
       osc2 = context.createOscillator();
       osc3 = context.createOscillator();
-      volumeLow = context.createGain();
-      volumeMid = context.createGain();
+      volumeHi = context.createGain();
+      volumeLo = context.createGain();
+      volumeMi = context.createGain();
 
   // FIRST OSCILLATOR
 
-  osc1.frequency.value = 100;
-  osc1.type = 'square';
+  // osc1.frequency.value = 100;
+  // osc1.type = 'square';
 
-  osc1.connect(volumeLow);
+  osc1.connect(volumeMi);
   osc1.start(context.currentTime);
 
   // SECOND OSCILLATOR
 
-  osc2.frequency.value = 80;
+  osc2.frequency.value = 60;
   osc2.type = 'square';
 
-  osc2.connect(volumeLow);
+  osc2.connect(volumeLo);
   osc2.start(context.currentTime);
+
+  // THIRD OSCILLATOR
+
+  osc3.frequency.value = 50;
+  osc3.type = 'square';
+
+  osc3.connect(volumeLo);
+  osc3.start(context.currentTime);
 
   // SPEAKERS
 
-  volumeLow.gain.value = 0.005;
-  volumeLow.connect(context.destination);
-  volumeMid.gain.value = 0.015;
-  volumeMid.connect(context.destination);
+
+  volumeLo.gain.value = 0.0005;
+  volumeLo.connect(context.destination);
+  volumeMi.gain.value = 0.001;
+  volumeMi.connect(context.destination);
 };
 
 var initNote = function () {

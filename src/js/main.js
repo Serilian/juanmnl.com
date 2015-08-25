@@ -33,7 +33,7 @@ $(document).ready(function () {
 
 function initMachine() {
   setTimeout(playTape, 250);
-  crtSound();
+  setTimeout(crtSound, 350);
   $("#preload").hide();
   $("#frame").css("visibility", "visible").show();
 
