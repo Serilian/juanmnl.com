@@ -67,7 +67,7 @@ var initNote = function () {
 
   volume.gain.value = 0.25;
 
-  osc.frequency.value = 880;
+  osc.frequency.value = 840;
   osc.type = 'square';
 
   osc.connect(volume);
