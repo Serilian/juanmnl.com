@@ -28,7 +28,7 @@ gulp.task('js', function () {
 
 // Build audio FOLDER
 gulp.task('audio', function () {
-  gulp.src('./src/audio/**/*.mp3')
+  gulp.src('./src/audio/**/*.wav')
   .pipe(gulp.dest('./build/audio/'));
 });
 

@@ -32,8 +32,7 @@ $(document).ready(function () {
 });
 
 function initMachine() {
-  setTimeout(playTape, 250);
-  setTimeout(crtSound, 350);
+  powerUp();
   $("#preload").hide();
   $("#frame").css("visibility", "visible").show();
 
