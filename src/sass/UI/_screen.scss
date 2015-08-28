@@ -131,39 +131,39 @@
 
 // SCAN LINES
 
-// .scan,
-// .scan:before,
-// .scan:after {
-//   opacity: 0.5;
-//   position: absolute;
-//   left: 0;
-//   width: 100%;
-//   height: 10%;
-//   background-color: hsla(0, 0%, 0%, .13);
-//   box-shadow: 0 0 10px hsla(0, 0%, 0%, .25);
-//   animation: scan 4s linear infinite;
-// }
-//
-// .scan:before,
-// .scan:after {
-//   display: block;
-//   height: 60%;
-//   content: '';
-// }
-//
-// .scan:before {
-//   top: -350%;
-// }
-//
-// .scan:after {
-//   top: -1100%;
-// }
-//
-// @keyframes scan {
-//   0% {
-//     top: -20%;
-//   }
-//   100% {
-//     top: 150%;
-//   }
-// }
+.scan,
+.scan:before,
+.scan:after {
+  opacity: 0.5;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  background-color: hsla(0, 0%, 0%, .13);
+  box-shadow: 0 0 10px hsla(0, 0%, 0%, .25);
+  animation: scan .2s linear 40;
+}
+
+.scan:before,
+.scan:after {
+  display: block;
+  height: 60%;
+  content: '';
+}
+
+.scan:before {
+  top: -350%;
+}
+
+.scan:after {
+  top: -1100%;
+}
+
+@keyframes scan {
+  0% {
+    top: -20%;
+  }
+  100% {
+    top: 150%;
+  }
+}
