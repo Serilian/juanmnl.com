@@ -23,10 +23,10 @@ var common = {
 	module: {
 		loaders: [
 			{
-				test: /\.css$/,
-				loaders: ['style', 'css'],
-				include: APP_PATH
-			},
+        test: /\.scss$/,
+        exclude: /node_modules/,
+        loader: "style-loader!css-loader!autoprefixer-loader!sass-loader"
+      },
 			{
 				test: /\.jsx?$/,
 				loaders: ['babel'],
