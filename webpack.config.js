@@ -31,7 +31,12 @@ var common = {
 				test: /\.jsx?$/,
 				loaders: ['babel'],
 				include: APP_PATH
-			}
+			},
+      {
+        test: /\.(png|jpg)$/,
+        exclude: /node_modules/,
+        loader: "url-loader?limit=100000"
+      }
 		]
 	},
 	plugins: [
