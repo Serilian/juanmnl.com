@@ -1,13 +1,16 @@
 var React = require('react');
-
-var Component = require('./Component');
+var Frame = require('./Frame');
+var Preload = require('./Preload');
+var Footer = require('./Footer');
 
 var App = React.createClass({
 	render: function() {
 		return (
-			<div>
-				<h1>Hello Stranger!</h1>
-				<Component />
+			<div className="machine">
+				<div className="interlace"></div>
+				{/*<Preload />*/}
+				<Frame />
+				<Footer />
 			</div>
 		);
 	}
