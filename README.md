@@ -17,4 +17,4 @@ From console terminals, to modern day GUI displays, to future of UI's and UX?
 ---
 **INSPIRATION**
 
-![Commodore64](https://github.com/juanmnl/juanmnl.com/inspiration/commodore64.gif)
+![Commodore64](https://github.com/juanmnl/juanmnl.com/blob/master/inspiration/commodore64.gif)
