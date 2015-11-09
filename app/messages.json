@@ -1,0 +1,10 @@
+{
+	"messages": [
+		"loading" {
+			"text": "Loading!"
+		},
+		"welcome" {
+			"text": "Welcome"
+		}
+	]
+}
