@@ -1,3 +1,4 @@
+![Icon](https://github.com/juanmnl/juanmnl.com/blob/master/inspiration/icon.png)
 ##Building a UI morphing JS 'machine' as a personal website & portfolio
 
 From console terminals, to modern day GUI displays, to future of UI's and UX?
@@ -18,3 +19,9 @@ From console terminals, to modern day GUI displays, to future of UI's and UX?
 **INSPIRATION**
 
 ![Commodore64](https://github.com/juanmnl/juanmnl.com/blob/master/inspiration/commodore64.gif)
+
+![MS-DOS](https://github.com/juanmnl/juanmnl.com/blob/master/inspiration/MS-DOS.jpg)
+
+![Apple](https://github.com/juanmnl/juanmnl.com/blob/master/inspiration/sarasos.gif)
+
+![IBM](https://github.com/juanmnl/juanmnl.com/blob/master/inspiration/ibm.gif)
