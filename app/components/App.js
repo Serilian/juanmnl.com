@@ -1,14 +1,13 @@
-var React = require('react');
-var Frame = require('./Frame');
-var Preload = require('./Preload');
-var Footer = require('./Footer');
+import React from 'react';
+import Frame from './Frame';
+// import Preload from './Preload';
+import Footer from './Footer';
 
-var App = React.createClass({
-	render: function() {
+const App = React.createClass({
+	render() {
 		return (
 			<div className="machine">
 				<div className="interlace"></div>
-				{/*<Preload />*/}
 				<Frame />
 				<Footer />
 			</div>
@@ -16,4 +15,4 @@ var App = React.createClass({
 	}
 });
 
-module.exports = App;
+export default App;

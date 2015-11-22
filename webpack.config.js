@@ -28,7 +28,7 @@ var common = {
         loader: "style-loader!css-loader!autoprefixer-loader!sass-loader"
       },
 			{
-				test: /\.jsx?$/,
+				test: /\.js?$/,
 				loaders: ['babel'],
 				include: APP_PATH
 			},
