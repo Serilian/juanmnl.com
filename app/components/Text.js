@@ -1,9 +1,9 @@
-var React = require('react');
+import React from 'react';
 
-var Text = React.createClass({
-	render: function() {
+const Text = React.createClass({
+	render() {
 		return <p className="text"><span>Text Information</span></p>;
 	}
 });
 
-module.exports = Text;
+export default Text;

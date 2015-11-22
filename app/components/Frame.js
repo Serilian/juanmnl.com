@@ -1,10 +1,10 @@
-var React = require('react');
+import React from 'react';
 
-var Screen = require('./Screen');
-var Controls = require('./Controls');
+import Screen from './Screen';
+import Controls from './Controls';
 
-var Frame = React.createClass({
-	render: function() {
+const Frame = React.createClass({
+	render() {
 		return (
 			<div id="frame">
 				<Screen />
@@ -14,4 +14,4 @@ var Frame = React.createClass({
 	}
 });
 
-module.exports = Frame;
+export default Frame;

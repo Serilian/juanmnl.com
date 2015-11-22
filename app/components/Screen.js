@@ -1,19 +1,18 @@
-var React = require('react');
+import React from 'react';
+import Messages from './Messages';
+import Text from './Text';
 
-var Messages = require('./Messages');
-var Text = require('./Text');
-
-var Screen = React.createClass({
-	render: function() {
+const Screen = React.createClass({
+	render() {
 		return (
 			<div id="screen" className="on">
 				<div className="scan"></div>
 
-			  <p id="title-bar" className="center">
-			    Welcome to juanmnl.com V0.1.0<i><small>alpha *May contain some Reactjs</small></i>
-			  </p>
+				<p id="title-bar" className="center">
+					Welcome to juanmnl.com V0.1.0<i><small>alpha *May contain some Reactjs</small></i>
+				</p>
 
-			  <hr id="divider" />
+				<hr id="divider" />
 				<Messages />
 				<Text />
 			</div>
@@ -21,4 +20,4 @@ var Screen = React.createClass({
 	}
 });
 
-module.exports = Screen;
+export default Screen;

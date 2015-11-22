@@ -1,13 +1,13 @@
-var React = require('react');
+import React from 'react';
 
-var Footer = React.createClass({
-	render: function() {
+const Footer = React.createClass({
+	render() {
 		return (
 			<footer className="footer">
-			  &copy;JuanmnlCornejo 1984
+				&copy;JuanmnlCornejo 1984
 			</footer>
 		);
 	}
 });
 
-module.exports = Footer;
+export default Footer;

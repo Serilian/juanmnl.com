@@ -1,19 +1,19 @@
-var React = require('react');
+import React from 'react';
 
-var Messages = React.createClass({
-	render: function() {
+const Messages = React.createClass({
+	render() {
 		return (
 			<div>
 				<p id="loading">
-				  Loading Message...
+					Loading Message...
 				</p>
 
 				<p id="error">
-				  <span className="danger">
-				    ++ ERROR MESSAGE ++ <br />
-				    ++ SYSTEM CORRUPTED ++ <br />
-				    ----------------------
-				  </span>
+					<span className="danger">
+						++ ERROR MESSAGE ++ <br />
+						++ SYSTEM CORRUPTED ++ <br />
+						----------------------
+					</span>
 				</p>
 
 				<p id="serverReady"><small><span className="ok">SYSTEM RUNNING...</span></small></p>
@@ -24,4 +24,4 @@ var Messages = React.createClass({
 	}
 });
 
-module.exports = Messages;
+export default Messages;

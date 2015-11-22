@@ -1,9 +1,9 @@
-var React = require('react');
+import React from 'react';
 
-var Component = React.createClass({
-	render: function() {
+const Component = React.createClass({
+	render() {
 		return <p>Welcome to my website</p>;
 	}
 });
 
-module.exports = Component;
+export default Component;

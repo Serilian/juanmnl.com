@@ -1,13 +1,13 @@
-var React = require('react');
+import React from 'react';
 
-var Preload = React.createClass({
-	render: function() {
+const Preload = React.createClass({
+	render() {
 		return (
 			<div>
 				<p id="preload">
-				  Welcome to juanmnl.com :P
-				  <br /> Please press &lt;&lt; ENTER
-				  <small>(or touch)</small> &gt;&gt; to continue
+					Welcome to juanmnl.com :P
+					<br /> Please press &lt;&lt; ENTER
+					<small>(or touch)</small> &gt;&gt; to continue
 				</p>
 
 			</div>
@@ -15,4 +15,4 @@ var Preload = React.createClass({
 	}
 });
 
-module.exports = Preload;
+export default Preload;
