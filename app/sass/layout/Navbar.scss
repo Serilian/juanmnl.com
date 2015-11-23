@@ -1,0 +1,14 @@
+@import './../settings';
+
+.navbar {
+  ul > li {
+    display: inline-block;
+    margin: 0 5px;
+    list-style: none;
+
+    a {
+      color: $white;
+      background-color: transparent;
+    }
+  }
+}

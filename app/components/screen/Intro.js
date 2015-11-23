@@ -2,7 +2,7 @@ import React from 'react';
 
 const Intro = React.createClass({
 	render() {
-		return <p className="text"><span>Text Information</span></p>;
+		return <p className="text"><span>Intro</span></p>;
 	}
 });
 
