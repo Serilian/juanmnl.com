@@ -13,6 +13,7 @@ const Screen = React.createClass({
 				</p>
 
 				<hr id="divider" />
+				{this.props.children}
 				<Messages />
 				<Text />
 			</div>

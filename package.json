@@ -40,10 +40,11 @@
     "xo": "0.11.2"
   },
   "dependencies": {
+    "history": "1.13.1",
     "jquery": "2.1.4",
-    "normalize": "0.3.1",
     "normalize.css": "3.0.3",
     "react": "0.14.2",
-    "react-dom": "0.14.2"
+    "react-dom": "0.14.2",
+    "react-router": "1.0.0"
   }
 }
