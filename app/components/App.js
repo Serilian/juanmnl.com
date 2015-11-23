@@ -1,7 +1,7 @@
 import React from 'react';
-import Frame from './Frame';
-// import Preload from './Preload';
-import Footer from './Footer';
+import Frame from './layout/Frame';
+// import Preload from './layout/Preload';
+import Footer from './layout/Footer';
 
 const App = React.createClass({
 	render() {

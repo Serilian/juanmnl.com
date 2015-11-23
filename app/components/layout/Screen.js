@@ -1,6 +1,6 @@
 import React from 'react';
-import Messages from './Messages';
-import Text from './Text';
+import Load from './../screen/LoadSystem';
+import Intro from './../screen/Intro';
 
 const Screen = React.createClass({
 	render() {
@@ -14,8 +14,8 @@ const Screen = React.createClass({
 
 				<hr id="divider" />
 				{this.props.children}
-				<Messages />
-				<Text />
+				<Load />
+				<Intro />
 			</div>
 		);
 	}

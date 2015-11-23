@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Text = React.createClass({
+const Intro = React.createClass({
 	render() {
 		return <p className="text"><span>Text Information</span></p>;
 	}
 });
 
-export default Text;
+export default Intro;

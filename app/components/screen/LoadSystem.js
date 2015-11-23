@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Messages = React.createClass({
+const LoadSystem = React.createClass({
 	render() {
 		return (
 			<div>
@@ -24,4 +24,4 @@ const Messages = React.createClass({
 	}
 });
 
-export default Messages;
+export default LoadSystem;
