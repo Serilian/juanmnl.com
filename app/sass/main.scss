@@ -47,17 +47,16 @@ hr {
 /* UI-Controls */
 @import 'UI/controls';
 /* UI-Preload */
-@import 'UI/frame';
-/* UI-Preload */
 @import 'UI/preload';
 /* UI-CRT */
 @import 'UI/crt';
-/* UI-Screen */
-@import 'UI/screen';
 /* UI-Text */
 @import 'UI/text';
 /* UI-Cursor */
 @import 'UI/cursor';
+/* UI-Main Frame */
+@import 'UI/mainframe';
+
 
 .blink {
   -webkit-animation: blink .2s infinite;

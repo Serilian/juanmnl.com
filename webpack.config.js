@@ -18,7 +18,7 @@ var common = {
 	},
 	output: {
     path: BUILD_PATH,
-    filename: "bundle.js"
+    filename: 'bundle.js'
   },
 	module: {
 		loaders: [

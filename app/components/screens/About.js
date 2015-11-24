@@ -1,9 +1,13 @@
 import React from 'react';
+import Intro from './Intro';
 
 const About = React.createClass({
 	render() {
 		return (
-			<h1>About!</h1>
+			<div>
+        <h1>About!</h1>
+        <Intro />
+			</div>
 		);
 	}
 });
