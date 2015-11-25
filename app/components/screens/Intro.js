@@ -1,8 +1,13 @@
 import React from 'react';
+import TypeWriter from 'react-typewriter';
 
 const Intro = React.createClass({
 	render() {
-		return <p className="text"><span>Intro</span></p>;
+		return (
+			<div>
+				<p>Intro: Hello World!</p>
+			</div>
+		);
 	}
 });
 

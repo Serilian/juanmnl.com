@@ -13,13 +13,17 @@ const App = React.createClass({
             <div className="scan"></div>
 
             <p id="title-bar" className="center">
-              Welcome to juanmnl.com V0.1.0<i><small>alpha *May contain some Reactjs</small></i>
+              Welcome to juanmnl.com v1.0.0
             </p>
+
             <Navbar />
+
             <hr id="divider" />
             {this.props.children}
           </div>
+
           <Controls />
+
 				</div>
 				<Footer />
 			</div>

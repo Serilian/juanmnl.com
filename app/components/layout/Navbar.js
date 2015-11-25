@@ -18,6 +18,11 @@ const Navbar = React.createClass({
 							About
 						</Link>
 					</li>
+          <li>
+						<Link to="/contact" activeStyle={ ACTIVE }>
+							Contact
+						</Link>
+					</li>
 				</ul>
 			</nav>
 		);
