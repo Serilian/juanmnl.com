@@ -11,53 +11,53 @@ var BUILD_PATH = path.resolve(ROOT_PATH, 'build');
 process.env.BABEL_ENV = TARGET;
 
 var common = {
-	entry: APP_PATH,
-	// resolve extensions
-	resolve: {
-		extensions: ['', '.js', '.jsx']
-	},
-	output: {
+  entry: APP_PATH,
+  // resolve extensions
+  resolve: {
+    extensions: ['', '.js', '.jsx']
+  },
+  output: {
     path: BUILD_PATH,
     filename: 'bundle.js'
   },
-	module: {
-		loaders: [
-			{
+  module: {
+    loaders: [
+      {
         test: /\.scss$/,
         exclude: /node_modules/,
-        loader: "style-loader!css-loader!autoprefixer-loader!sass-loader"
+        loader: 'style-loader!css-loader!autoprefixer-loader!sass-loader'
       },
-			{
-				test: /\.js?$/,
-				loaders: ['babel'],
-				include: APP_PATH
-			},
+      {
+        test: /\.js?$/,
+        loaders: ['babel'],
+        include: APP_PATH
+      },
       {
         test: /\.(png|jpg)$/,
         exclude: /node_modules/,
-        loader: "url-loader?limit=100000"
+        loader: 'url-loader?limit=100000'
       }
-		]
-	},
-	plugins: [
-		new HtmlwebpackPlugin({
-			title: 'Welcome to my playground',
-			template: 'app/index.html'
-		})
-	]
+    ]
+  },
+  plugins: [
+    new HtmlwebpackPlugin({
+      title: 'Welcome to my playground',
+      template: 'app/index.html'
+    })
+  ]
 };
 
 if(TARGET === 'start' || !TARGET) {
-	module.exports = merge(common, {
-		devtool: 'eval-source-map',
-		devServer: {
-			historyApiFallback: true,
-			hot: true,
-			inline: true,
-			progress: true,
-		},
-		plugins: [
-			new webpack.HotModuleReplacementPlugin()
-		]
-	});
+  module.exports = merge(common, {
+    devtool: 'eval-source-map',
+    devServer: {
+      historyApiFallback: true,
+      hot: true,
+      inline: true,
+      progress: true,
+    },
+    plugins: [
+      new webpack.HotModuleReplacementPlugin()
+    ]
+  });
 }

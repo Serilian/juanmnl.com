@@ -10,6 +10,6 @@ import routes from './config/routes';
 main();
 
 function main() {
-	let app = document.getElementById('app');
-	render(<Router routes={routes}/>, app);
+  let app = document.getElementById('app');
+  render(<Router routes={routes}/>, app);
 }
