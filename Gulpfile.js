@@ -99,4 +99,4 @@ gulp.task('serve', ['sass', 'hbs' ,'js', 'jshint', 'audio'], function() {
 gulp.task('default', ['serve']);
 
 // BUILD
-gulp.task('build', ['jshint', 'html', 'sass', 'js', 'imagemin', 'vendor']);
+gulp.task('build', ['jshint', 'hbs', 'sass', 'js', 'imagemin', 'vendor']);
